@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        button {
+            color: white;
+            background-color: mediumpurple;
+            border-color: lightblue;
+            height: 25px;
+            width: 100px;
+        }
+
+        #country {
+            width: 120px;
+        }
+
+        #country1 {
+            width: 120px;
+        }
+
+        tr, td {
+            padding: 5px 20px;
+        }
+
+        p {
+            color: blue;
+        }
+
+    </style>
+<body>
+<form>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="num">
+        </td>
+        <td>
+            <select name="" id="country">
+                <option value="USD">USD</option>
+                <option value="Việt nam">Việt nam</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="country1">
+                <option value="Việt nam">Việt nam</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" value="Convert" onclick="count()">Convert</button>
+        </td>
+    <tr>
+        <td>
+            <p id="resutl"></p>
+        </td>
+    </tr>
+    </tr>
+</table>
+</form>
+</body>
+<script>
+    function count() {
+        let a = document.getElementById("num").value;
+        let b = document.getElementById("country").value;
+        let c = document.getElementById("country1").value;
+
+        if (b == "Việt nam" && c == "Việt nam") {
+            document.getElementById("resutl").innerHTML = "Result: " + a + " VND"
+        }
+        if (b == "USD" && c == "USD") {
+            document.getElementById("resutl").innerHTML = "Result: " + a + " USD"
+        }
+        if (b == "Việt nam" && c == "USD") {
+            document.getElementById("resutl").innerHTML = "Result: " + a / 24000 + " USD"
+        }
+        if (b == "USD" && c == "Việt nam") {
+            document.getElementById("resutl").innerHTML = "Result: " + a * 24000 + " VND"
+        }
+    }
+</script>
+</html>
