@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhiet_do = 0;
+    do {
+        nhiet_do = parseInt(prompt('nhập nhiệt độ'));
+        if (nhiet_do < 20) {
+            alert('yêu cầu tăng nhiệt độ');
+        } else if (nhiet_do > 100) {
+            alert('yêu cầu giảm nhiệt độ');
+        }
+
+    } while (nhiet_do < 20 || nhiet_do > 100);
+
+    alert(nhiet_do + ' nhiệt độ bình thường ');
+
+    // let nhiet_do = parseInt(prompt('nhập nhiệt độ'));
+    //
+    // while (nhiet_do < 20 || nhiet_do > 100) {
+    //     if (nhiet_do < 20) {
+    //         alert('yêu cầu tăng nhiệt độ');
+    //       nhiet_do =  parseInt(prompt('nhập nhiệt độ'));
+    //     } else if (nhiet_do > 100) {
+    //         alert('yêu cầu giảm nhiệt độ');
+    //         nhiet_do =  parseInt(prompt('nhập nhiệt độ'))
+    //     }
+    // }
+    // alert(nhiet_do + ' nhiệt độ chuẩn ');
+</script>
+</body>
+</html>
