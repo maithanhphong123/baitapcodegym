@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    let a = parseInt(prompt('nhập số lượng fibonacci muốn in ra'));
+    let num0 = 0 ;
+    let num1 = 1;
+    let  numa;
+    let ftong = 0;
+    for (let i = 1 ; i <= a; i++){
+        ftong = (num0 + numa) - 1;
+        document.writeln(num0);
+        numa = num0 + num1;
+        num0 = num1;
+        num1 = numa;
+    }
+    document.write('<br>');
+    document.write(ftong);
+    </script>
+</body>
+</html>

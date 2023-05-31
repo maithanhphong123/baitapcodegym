@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // num0 = 0, num1 = 1, numi = num(i-1) + num(i -2)
+
+    let a = parseInt(prompt('nhập số lượng fibonacci muốn in ra'));
+    let num0 = 0 ;
+    let num1 = 1;
+    let  numa;
+    for (let i = 1 ; i <= a; i++){
+            document.writeln(num0);
+            numa = num0 + num1;
+            num0 = num1;
+            num1 = numa;
+    }
+
+</script>
+</body>
+</html>
