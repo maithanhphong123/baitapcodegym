@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let bai_kiem_tra = +prompt('nhap diem');
+        let thi_giua_ki = +prompt('nhap diem ');
+        let thi_cuoi_ky = +prompt('nhap diem');
+        let diem_trung_binh = (bai_kiem_tra + thi_giua_ki * 2 + thi_cuoi_ky * 3) / 6;
+        alert('điểm trung bình: ' + diem_trung_binh);
+        if (diem_trung_binh >= 8 && diem_trung_binh <= 10) {
+            alert('xếp loại giỏi');
+        } else if (diem_trung_binh >= 6.5 && diem_trung_binh < 8) {
+            alert('xếp loại khá');
+        } else if (diem_trung_binh >= 5 && diem_trung_binh < 6.5) {
+            alert('xếp loại trung bình');
+        } else {
+            alert('xếp loại yếu');
+        }
+    </script>
+</body>
+</html>
