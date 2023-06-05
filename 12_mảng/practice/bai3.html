@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1,12,2,4,5,23,7,10,13,9];
+    let max = array[0];
+    let index = 0;
+    let f = 0;
+    for (let i = 0;i < array.length;i++) {
+        f = array[i] + f;
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+    }
+    document.writeln(array);
+    document.writeln('<br/>');
+    document.writeln('số có giá trị lớn nhất là ' + max + ' tại vị trí ' + index);
+    document.writeln('<br/>');
+    document.writeln(f);
+</script>
+</body>
+</html>
