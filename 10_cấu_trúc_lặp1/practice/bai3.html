@@ -6,19 +6,22 @@
 </head>
 <body>
 <script>
-    // num0 = 0, num1 = 1, numi = num(i-1) + num(i -2)
-
-    let a = parseInt(prompt('nhập số lượng fibonacci muốn in ra'));
-    let num0 = 0 ;
-    let num1 = 1;
-    let  numa;
-    for (let i = 1 ; i <= a; i++){
-            document.writeln(num0);
-            numa = num0 + num1;
-            num0 = num1;
-            num1 = numa;
+    let array = [1,12,2,4,5,23,7,10,13,9];
+    let max = array[0];
+    let index = 0;
+    let f = 0;
+    for (let i = 0;i < array.length;i++) {
+        f = array[i] + f;
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
     }
-
+    document.writeln(array);
+    document.writeln('<br/>');
+    document.writeln('số có giá trị lớn nhất là ' + max + ' tại vị trí ' + index);
+    document.writeln('<br/>');
+    document.writeln(f);
 </script>
 </body>
 </html>
