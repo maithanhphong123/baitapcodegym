@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    let array = Array();
+    let index = 0;
+    do {
+        a = parseInt(prompt('nhập: (nhập 0 để dừng )'));
+        if (a === 0) {
+            break;
+        }
+        array[index] = a;
+        index++;
+    } while (true);
+    alert(array);
+    alert(array.reverse().join());
+    </script>
+</body>
+</html>
