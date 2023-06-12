@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array = Array();
+        let index = 0;
+        for (i = 0;i <= 10;i++) {
+            a = parseFloat(prompt('nhập: '));
+            if (a === 0) {
+                break;
+            }
+            array[index] = a;
+            index++;
+        }
+            alert(array);
+            alert(array.sort(function (a, b) {
+                return b - a
+            }));
+
+    </script>
+</body>
+</html>
