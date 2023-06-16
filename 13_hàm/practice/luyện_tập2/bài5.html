@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+         a = +prompt('nhập a: ');
+         b = +prompt('nhập b: ');
+         c = +prompt('nhập c: ');
+         function sosanh(a,b,c) {
+            let min;
+            if (a < b && a < c) {
+                min = a
+                return min;
+            } else {
+                if (b > c) {
+                    min = c
+                    return min;
+                } else {
+                    min = b
+                    return min;
+                }
+            }
+         }
+         let so_sanh = sosanh(a,b,c);
+         alert(so_sanh);
+    </script>
+</body>
+</html>
