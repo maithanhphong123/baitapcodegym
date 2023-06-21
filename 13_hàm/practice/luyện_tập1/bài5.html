@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt('nhập: ');
+        let arr1 = ["Polaris","Aldebaran", "Deneb", "Vega","Altair","Dubhe","Regulus"];
+        let arr2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        function c(arr1) {
+            for (let i = 0; i < arr1.length; i++) {
+                if (a === arr1[i]) {
+                    arr1[i] = arr2[i]
+                    return arr1[i];
+                } else {
+                    return 'không tìm thấy';
+                }
+            }
+        }
+        let v = c(arr1);
+        alert(v);
+    </script>
+</body>
+</html>
