@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhập kí tự bất kì: ');
+    let arr = [];
+    for (i = 0;i  < 10; i++){
+        arr[i] = prompt('nhập kí tự cho mảng: ');
+
+    }
+
+    let count = 0
+    function c(a,arr) {
+
+        for (i = 0; i < arr.length; i++){
+            if (arr[i] === a){
+                count++
+            }
+
+        }
+        if(count > 0){
+            return count;
+        }else if (count === 0)
+
+            return -1
+
+    }
+    let v= c(a,arr);
+    document.writeln('kí tự '+ a + ' xuất hiện ' + v + ' lần trong chuỗi' );
+</script>
+</body>
+</html>
