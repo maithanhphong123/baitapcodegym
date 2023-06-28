@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <canvas id="mycanvas" width="" height=""></canvas>
+<script>
+    let a = parseInt(prompt('nhập h: '));
+    let b = parseInt(prompt('nhập r: '));
+    class hcn {
+        constructor(length, weigth) {
+            this.length = length;
+            this.weigth = weigth;
+        }
+
+        getArea(length,weigth) {
+            return this.length * this.weigth;
+        }
+
+        getCircum(length,weigth) {
+            return (this.length + this.weigth)*2;
+        }
+        display(){
+            var canvas = document.getElementById('mycanvas');
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+                ctx.fillRect(10,50,this.length,this.weigth);
+            }
+        }
+    }
+    let HCN = new hcn(a,b);
+    let area = HCN.getArea();
+    let circum = HCN.getCircum();
+    document.write('<br/>');
+   document.write('diện tích S = ' + area);
+   document.write('<br/>');
+    document.write('chu vi P = ' + circum);
+    HCN.display();
+
+</script>
+</body>
+</html>
